@@ -1,0 +1,92 @@
+{% extends "base_page.html" %}
+{% load static %}
+{% block extra_head %}
+{% endblock extra_head %}
+{% block content %}
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="display-4">Welcome to My Portfolio!</h2>
+            <p class="lead">Hello, I'm Grzegorz, a computer science student with a passion for creating innovative websites and web applications.</p>
+            <p class="font-italic">My expertise lies in:</p>
+            <ul class="list-unstyled">
+                <li class="mb-1"><strong>Python:</strong></li>
+                <ul class="ml-3">
+                    <li>Django</li>
+                    <li>React</li>
+                </ul>
+                <li class="mb-1"><strong>Java:</strong></li>
+                <ul class="ml-3">
+                    <li>Angular</li>
+                    <li>JavaFX</li>
+                </ul>
+                <li class="mb-1"><strong>JavaScript:</strong></li>
+                <ul class="ml-3">
+                    <li>React.js</li>
+                    <li>Vue.js</li>
+                </ul>
+            </ul>
+            <p class="lead">I'm deeply passionate about exploring new technologies and always eager to embrace fresh challenges.</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <div class="caption">
+                <p class="secondary">I study in here: </p>
+            </div>
+            <a href="https://www.uken.krakow.pl/" target="_blank" class="text-decoration-none">
+                <div class="thumbnail">
+                    <img src="https://75lat.up.krakow.pl/wp-content/uploads/sites/58/2020/10/IMG_8813-scaled.jpg"  class="img-fluid"  alt="Uczelnia">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <div class="caption">
+                <p class="secondary">I specialise in: </p>
+            </div>
+            <a href="#"   class="text-decoration-none">
+                <div class="thumbnail">
+                    <img src="https://acropolium.com/img/articles/find-backend-developers/img01.jpg" class="img-fluid" alt="Dziedziny">
+                    
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <div class="caption">
+                <p class="secondary">My skills: </p>
+            </div>
+            <a href="{% url "skills-all" %}">
+                <div class="thumbnail">
+                    <img src="https://www.springboard.com/blog/wp-content/uploads/2022/09/programmng-language.jpg" class="img-fluid" alt="Umiejętności">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <div class="caption">
+                <p class="secondary">Contact me: </p>
+            </div>
+            <a href="{% url 'contact'%}">
+                <div class="thumbnail">
+                    <img src="https://cdn.shopify.com/app-store/listing_images/6849667d074ad3532510a7d1cf04cc2e/icon/CNSE2qfg4oMDEAE=.png"  class="img-fluid" alt="Kontakt">
+                    
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock content %}
+
+
+{% block extra_js %}
+{% endblock extra_js %}
+
+{% comment %} 
+TODO:
+    home_page.html: 
+    Ta strona powinna być punktem wejścia do Twojego portfolio. 
+    Może zawierać krótkie powitanie, które opisuje kim jesteś i co robisz, oraz przyciski lub linki prowadzące 
+    do innych sekcji Twojego portfolio, takich jak projekty, umiejętności, doświadczenie, kontakt, itp. 
+    Możesz także rozważyć dodanie zdjęcia profilowego lub jakiegoś wizualnego elementu, aby uczynić tę stronę 
+    bardziej atrakcyjną.
+ {% endcomment %}
